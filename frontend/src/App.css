@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background-color: #eaebf3;
+}
+#root {
+  width: 100%;
+  padding: 5rem 2rem;
+}
+h1 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  color: #e624e6;
+  text-align: center;
+}
+
+form {
+  width: 25%;
+  margin: 0 auto;
+}
+.form-field {
+  margin: 1rem 0;
+}
+label {
+  display: block;
+  text-align: start;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+input {
+  border: none;
+  width: 100%;
+  padding: 1rem 0.3rem;
+  color: #aaa;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Oxygen Mono", monospace;
+  box-shadow: -5px -5px 7px #fff, 5px 5px 7px #aaa;
+}
+input:focus {
+  outline-style: none;
+  box-shadow: inset 4px 4px 4px #aaa, inset -4px -4px 4px #fff;
+}
+input::placeholder {
+  color: #aaa;
+  font-size: 0.8rem;
+  font-family: "Oxygen Mono", monospace;
+}
+small {
+  display: block;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 0.75rem;
+}
+small a {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #e624e6;
+}
+.btn {
+  display: block;
+  font-family: "Oxygen", sans-serif;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  color: #e624e6;
+  margin: 2rem auto;
+  background-color: transparent;
+  box-shadow: -5px -5px 7px #fff, 5px 5px 7px #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #e624e6;
+  box-shadow: inset 4px 4px 4px #aaa, inset -4px -4px 4px #fff;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  color: #aaa;
+}
+
+@media screen and (max-width: 1600px) {
+  form {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
